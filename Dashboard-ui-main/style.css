@@ -1,8 +1,14 @@
+body{
+  width: 1920px;
+  overflow: hidden;
+}
+
 .main {
   top: 0px;
   left: 0px;
-  width: 1920px;
+  width: 1520px;
   height: 1077px;
+  overflow: auto;
 
   background: #eff2ff 0% 0% no-repeat padding-box;
   opacity: 1;
@@ -185,18 +191,32 @@ div.content {
 .content {
   position: relative;
   top: 100px;
+  
 }
-.kyc-text {
+.text01 {
   left: 570px;
   position: relative;
   width: 124px;
-  height: 29px;
+  height: 12px;
+  top: 10px;
   text-align: left;
   font: normal normal medium 25px/11px Sofia Pro;
   letter-spacing: 0px;
   color: #212121;
   opacity: 1;
 }
+.text-box
+{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 10px;
+  left: 65px;
+  width: 1127px;
+  justify-content: space-between;
+}
+
+
 .progress-container {
   display: flex;
   justify-content: space-between;
@@ -246,4 +266,79 @@ div.content {
 
 .circle.active {
   background-color: #286ecd;
+}
+
+.section-text{
+position: relative;
+left: 49px;
+width: 199px;
+height: 32px;
+text-align: left;
+font: normal normal bold 28px/32px Sofia Pro;
+letter-spacing: -0.16px;
+color: #383838;
+opacity: 1;
+}
+
+.section-box{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
+  width: 1092px;
+  left:80px;
+}
+
+.box1{
+  background: url("assets/BOX1.png") no-repeat;
+  width: 225px;
+  height: 134px;
+  BACKground-size: contain;
+}
+
+
+.box2{
+  background: url("assets/BOX2.png") no-repeat;
+  width: 225px;
+  height: 134px;
+  BACKground-size: contain;
+}
+
+
+.box3{
+  background: url("assets/BOX3.png") no-repeat;
+  width: 225px;
+  height: 134px;
+  BACKground-size: contain;
+}
+
+.box4{
+  background: url("assets/BOX4.png") no-repeat;
+  width: 225px;
+  height: 134px;
+  BACKground-size: contain;
+}
+
+.chart-container {
+  width: 593px;
+  margin: 20px auto;
+}
+
+.bar {
+  width: 30px;
+  height: 100px; /* You can adjust the height as needed */
+  background-color: lightblue;
+  display: inline-block;
+  margin-right: 10px;
+border-radiis:10px;
+}
+
+  .bar-fill{
+width: 100%;
+border-radius: 10px 10px 0px 0px;
+background-color: darkblue;
+position: relative;
+top: 79px;
+bottom: 0px;
+height: 25px;
 }
